@@ -56,7 +56,9 @@ void RandomSearch(double *a);
 int main(int argc, const char * argv[])
 {
 	double region[] = {-1.9, 1.9, -1.1, 1.1};
-	double a[6];
+	
+	//tik randomui
+    double a[6];
 	RandomSearch(a);
 
 //kol kas isjungiu
