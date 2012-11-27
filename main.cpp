@@ -51,11 +51,19 @@ iteration, int n){
 		return 0;
 }
 
+void RandomSearch(double *a);
+
 int main(int argc, const char * argv[])
 {
 	double region[] = {-1.9, 1.9, -1.1, 1.1};
-	double a[N] = {0.0, 1.0}; // N-matis Vektorius
-	/*srand(time(0)); // Naudoja vis kita seed'a
+	double a[6];
+	RandomSearch(a);
+
+//kol kas isjungiu
+//    double a[N] = {0.0, 1.0}; // N-matis Vektorius
+	
+    
+    /*srand(time(0)); // Naudoja vis kita seed'a
 	double a[N]; // N-matis Vektorius
 	for(int i = 0; i < N; ++i){
         a[i] = GetRandomNumber(region[2*i], region[2*i+1]);
@@ -94,6 +102,8 @@ int main(int argc, const char * argv[])
 	cout << "surastas sprendinys yra:" << endl;
 	cout << "xMin = (" << a[0] << ", " << a[1] << ")" << endl;
 	cout << "f(xMin) = " << fa << endl;
+	system("pause");
 	return 0;
+	
 }
 
