@@ -22,15 +22,15 @@ int  Steepest_Descent(double (*f)(double *), void (*df)(double *, double *),
 						double cutoff_scale_factor, double tolerance, int n);
 
 // Generuoja atsitiktini realu skaiciu tarp dLow and dHigh
-double GetRandomNumber(double dLow, double dHigh){
-    return static_cast<double>(rand())/RAND_MAX*(dHigh-dLow) + dLow;
-}
+double GetRandomNumber(double dLow, double dHigh);//{
+//    return static_cast<double>(rand())/RAND_MAX*(dHigh-dLow) + dLow;
+//}
 
 // Apskaiciuoja Six-hump Camel Back funkcijos reiksme taske x
-double SixHumpCamelBack(double *x){
-    return (4-2.1*x[0]*x[0]+x[0]*x[0]*x[0]*x[0]/3)*x[0]*x[0] + x[0]*x[1] +
-    (-4+4*x[1]*x[1])*x[1]*x[1];
-}
+double SixHumpCamelBack(double *x);//{
+//    return (4-2.1*x[0]*x[0]+x[0]*x[0]*x[0]*x[0]/3)*x[0]*x[0] + x[0]*x[1] +
+//    (-4+4*x[1]*x[1])*x[1]*x[1];
+//}
 // Apskaiciuoja Six-hump Camel Back gradiento reiksme taske x
 void SixHumpCamelBackGradient(double *x, double *fGrad){
     fGrad[0] = 8*x[0]-8.4*x[0]*x[0]*x[0]+2*x[0]*x[0]*x[0]*x[0]*x[0]+x[1];

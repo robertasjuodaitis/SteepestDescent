@@ -5,14 +5,14 @@ using namespace std;
 static int n = 2; // Uzdavinio dimensija
 
 // Generuoja atsitiktini realu skaiciu tarp dLow and dHigh
-double GetRandomNumber(double dLow, double dHigh);//{
-//    return static_cast<double>(rand())/RAND_MAX*(dHigh-dLow) + dLow;
-//}
+double GetRandomNumber(double dLow, double dHigh){
+    return static_cast<double>(rand())/RAND_MAX*(dHigh-dLow) + dLow;
+}
 // Apskaiciuoja Six-hump Camel Back funkcijos reiksme taske x
-double SixHumpCamelBack(double *x);//{
-//    return (4-2.1*x[0]*x[0]+x[0]*x[0]*x[0]*x[0]/3)*x[0]*x[0] + x[0]*x[1] +
-//    (-4+4*x[1]*x[1])*x[1]*x[1];
-//}
+double SixHumpCamelBack(double *x){
+    return (4-2.1*x[0]*x[0]+x[0]*x[0]*x[0]*x[0]/3)*x[0]*x[0] + x[0]*x[1] +
+    (-4+4*x[1]*x[1])*x[1]*x[1];
+}
 // Isrinkimo paieskos algoritmas
 void Selection(double *dF, double *dX, int l, int r){
     for (int i = l; i < r; i++){
