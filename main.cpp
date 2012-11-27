@@ -76,15 +76,13 @@ int main(int argc, const char * argv[])
 			cout << "In the line search three points are collinear." << endl; 
 			break;
 		case -2:
-			cout << "In the line search the extremum of the parabola through the
-            three points is a maximum." << endl;
+			cout << "In the line search the extremum of the parabola through the three points is a maximum." << endl;
 			break;
 		case -3:
-			cout << "Int the line search the initial points failed to satisfy
-            the condition that x1 < x2 < x3 and fx1 > fx2 < fx3." << endl;
+			cout << "Int the line search the initial points failed to satisfy the condition that x1 < x2 < x3 and fx1 > fx2 < fx3." << endl;
 			break;
 		case -4:
-			cout << "Not enough memory." << endl;
+			cout << "Not enough HEAP memory." << endl;
 			break;
 		case -5:
 			cout << "The gradient evaluated at the initial point vanishes." << endl;

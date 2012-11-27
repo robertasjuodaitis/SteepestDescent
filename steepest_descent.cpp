@@ -126,7 +126,7 @@ int  Steepest_Descent(double (*f)(double *), void (*df)(double *, double *),
    int err = 0;
    int iteration = 0;
    x = (double *) malloc(n * sizeof(double));
-   if ( x == NULL) { err = -3; }
+   if ( x == NULL) { err = -4; }
 
    df(a, dfa);
    if (Vector_Max_Norm(dfa,n) == 0.0) err = -5;
